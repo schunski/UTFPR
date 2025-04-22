@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let salario;
+    let conta1;
+    let conta2;
+
+    salario = Number(prompt(`Informe o valor do seu salário recebido: `));
+    conta1 = Number(prompt(`Informe o valor da primeira conta que deseja pagar: `));
+    conta2 = Number(prompt(`Informe o valor da segunda conta que deseja pagar: `));
+
+    const resultado = calcularMulta(salario, conta1, conta2);
+
+    document.write(`Dados requisitados: <br><br>`);
+    document.write(`Conta 1: R$${resultado.somaTotalConta1} | Conta 2: R$${resultado.somaTotalConta2} <br>`);
+    document.write(`<hr> Salário Total: R$${salario} | Salário Restante: R$${resultado.restanteSalario}`);
+
+</script>

@@ -1,0 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let salarioBruto;
+
+    salarioBruto = Number(prompt(`Informe o salário bruto: `));
+    const resultado = calcularSalarioLiquido(salarioBruto);
+
+    document.write(`Dados requisitados: <br>`);
+    document.write(`<hr> O salário bruto é R$${salarioBruto} <br>`);
+    document.write(`<hr> O total de descontos foi de R$${resultado.descontos} <br>`);
+    document.write(`<hr> O salário liquido é R$${resultado.salarioLiquido}`);
+    
+</script>

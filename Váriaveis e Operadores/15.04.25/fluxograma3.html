@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    let consumo;
+
+    consumo = Number(prompt(`Informe a quantidade consumida em kwatts: `));
+
+    function verificarConsumo(consumo) {
+        let consumoKwatts = consumo * 0.41;
+        let taxaIluminacao = consumoKwatts * 0.03;
+        let consumoTotal = consumoKwatts + taxaIluminacao + 1.70;
+
+        return consumoTotal;
+    };
+
+    const resultado = verificarConsumo(consumo);
+
+    document.write(`O valor lucrado é igual a R$${resultado}`);
+
+</script>

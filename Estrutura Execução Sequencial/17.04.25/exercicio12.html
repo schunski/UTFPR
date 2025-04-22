@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let deposito;
+    let taxaJuros;
+
+    deposito = Number(prompt(`Informe o valor do depósito: `));
+    taxaJuros = Number(prompt(`Informe o valor de juros: `));
+
+    const resultado = calcularRendimento(deposito, taxaJuros);
+
+    document.write(`Valores informados: <br><br>`);
+    document.write(`Deposito: R$${deposito} | Taxa de Juros: ${taxaJuros}% <br>`);
+    document.write(`<hr> Sobre o rendimento: <br><br>`);
+    document.write(`Valor de rendimento: R$${resultado.rendimento} | Valor total do rendimento: R$${resultado.rendimentoTotal}`);    
+
+</script>

@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let nomeProduto;
+    let precoCusto;
+    let precoVenda;
+    let qteItens;
+
+    nomeProduto = prompt(`Informe o nome do produto: `);
+    precoCusto = Number(prompt(`Informe o valor de custo do produto: `));
+    precoVenda = Number(prompt(`Informe o preço de venda do produto: `));
+    qteItens = Number(prompt(`Informe a quantidade de unidades vendidas do produto: `));
+
+    const resultado = calcularLucro(precoCusto, precoVenda, qteItens);
+
+    document.write(`Dados requisitados: <br>`)
+    document.write(`<hr> Nome do produto: ${nomeProduto} | Total de unidades vendidas: ${qteItens} | Preço de custo R$${precoCusto} | Preço de venda R$${precoVenda} <br>`)
+    document.write(`<hr> O valor total de venda foi de R$${resultado.precoTotal} <br>`);
+    document.write(`<hr> O valor de lucro é R$${resultado.lucro}`);
+
+</script>

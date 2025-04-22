@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let totalPrestacoes
+    let prestacoesPagas;
+    let prestacaoValorAtual;
+
+    totalPrestacoes = Number(prompt(`Informe o valor total de prestações do Consórcio: `));
+    prestacoesPagas = Number(prompt(`Informe o valor total de prestações já pagas: `));
+    prestacaoValor = Number(prompt(`Informe o valor de cada prestação: `));
+
+    const resultado = calcularPrestacoes(totalPrestacoes, prestacoesPagas, prestacaoValor);
+
+    document.write(`Dados requisitados: <br>`);
+    document.write(`<hr> O valor total pago do Consórcio é R$${resultado.totalPago} de ${prestacoesPagas} prestações. <br>`);
+    document.write(`<hr> O valor de saldo devedor é R$${resultado.valorPrestacoesRestante} de ${resultado.qtePrestacaoRestante} prestações. `);
+
+</script>

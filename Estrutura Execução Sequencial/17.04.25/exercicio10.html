@@ -1,0 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let salarioMinimo;
+    let salarioFuncionario;
+
+    salarioMinimo = Number(prompt(`Informe o valor do salário mínimo: `));
+    salarioFuncionario = Number(prompt(`Informe o salário que um funcionário recebe: `));
+
+    const resultado = calcularSalario(salarioMinimo, salarioFuncionario);
+
+    document.write(`A quantidade de salários mínimos que o funcionário recebe é ${resultado.toFixed(2)}`);
+
+</script>

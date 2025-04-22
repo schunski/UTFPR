@@ -1,0 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let consumo;
+
+    consumo = Number(prompt(`Informe o valor de consumo (kwatts): `));
+    const resultado = calcularFatura(consumo);
+
+    document.write(`Dados requisitados: <br><br>`);
+    document.write(`O total consumido é ${resultado.consumoTotal} kwatts <br>`);
+    document.write(`<hr> A taxa de manutenção é R$${resultado.taxaManutencao} <br>`);
+    document.write(`<hr> O valor da fatura é R$${resultado.fatura}`);
+
+</script>

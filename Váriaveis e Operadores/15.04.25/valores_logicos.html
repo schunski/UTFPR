@@ -1,0 +1,156 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    let a = 127;
+    let b = 10;
+    let c = 5;
+    let d = false;
+    let e = true;
+
+    // Exercise A
+    function verificarCondicao1(d, e) {
+    console.log(`ExercÍcio A: `);
+        if(d && e) {
+            console.log(`Condição é verdadeira.`);
+        } else {
+            console.log(`Condição é falsa`)
+        };
+    };
+
+    verificarCondicao1(d, e);
+
+
+    // Exercise B
+    function verificarCondicao2(d) {
+        console.log(`Exercício B: `);
+        if(~d) {
+            console.log(`Condição é verdadeira.`);
+            return true;
+        } else {
+            console.log(`Condição é falsa`)
+            return false;
+        };
+    };
+
+    verificarCondicao2(d);
+
+
+    // Exercise C
+    function verificarCondicao3(a, b, d, e) {
+        console.log(`Exercício C: `);
+        if(d && e || a == b) {
+            console.log(`Condição é verdadeira.`);
+            return true;
+        } else {
+            console.log(`Condição é falsa`)
+            return false;
+        };
+    };
+
+    verificarCondicao3(a, b, d, e);
+
+
+    // Exercise D
+    function verificarCondicao4(a, b, d, e) {
+        console.log(`Exercício D: `)
+        if(d || e && a < b) {
+            console.log(`Condição é verdadeira.`);
+            return true;
+        } else {
+            console.log(`Condição é falsa`)
+            return false;
+        };
+    };
+
+    verificarCondicao4(a, b, d, e);
+
+
+    // Exercise E
+    function verificarCondicao5(a, b, c) {
+        console.log(`Exercício E: `)
+        if(a > b || b < c) {
+            console.log(`Condição é verdadeira.`);
+            return true;
+        } else {
+            console.log(`Condição é falsa`)
+            return false;
+        };
+    };
+
+    verificarCondicao5(a, b, c);
+
+
+    // Exercise F
+    function verificarCondicao6(a, b) {
+        console.log(`Exercício F: `)
+        if(~a < b) {
+            console.log(`Condição é verdadeira.`);
+            return true;
+        } else {
+            console.log(`Condição é falsa`)
+            return false;
+        };
+    };
+
+    verificarCondicao6(a, b);
+
+
+    // Exercise G
+    function verificarCondicao7(a, b, c, d, e) {
+        console.log(`Exercício G: `);
+        if(a + b < c && d || e && ~d) {
+            console.log(`Condição é verdadeira.`);
+            return true;
+        } else {
+            console.log(`Condição é falsa`)
+            return false;
+        };
+    };
+
+    verificarCondicao7(a, b, c, d, e);
+
+    
+    // Exercise H
+    function verificarCondicao8(a, b) {
+        console.log(`Exercício H: `);
+        if(a + b * c / b == 3 && ~(A = B)) {
+            console.log(`Condição é verdadeira.`);
+            return true;
+        } else {
+            console.log(`Condição é falsa`)
+            return false;
+        };
+    };
+
+    verificarCondicao8(a, b);
+
+
+    // Exercise I
+    function verificarCondicao9(a, c) {
+        console.log(`Exercício I: `);
+        if(a % 2 == c) {
+            console.log(`Condição é verdadeira.`);
+            return true;
+        } else {
+            console.log(`Condição é falsa`)
+            return false;
+        };
+    };
+
+    verificarCondicao9(a, c);
+
+
+    // Exercise J
+    function verificarCondicao9(b, c) {
+        console.log(`Exercício J: `);
+        if(b / 2 !== c / 2) {
+            console.log(`Condição é verdadeira.`);
+            return true;
+        } else {
+            console.log(`Condição é falsa`)
+            return false;
+        };
+    };
+
+    verificarCondicao9(b, c);
+
+</script>

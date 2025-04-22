@@ -1,0 +1,15 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    let precoCusto;
+    let precoVenda;
+    let qteItens;
+
+    precoCusto = Number(prompt(`Informe o valor de preço de custo do produto: `));
+    precoVenda = Number(prompt(`Informe o valor de preço de venda do produto: `));
+    qteItens = Number(prompt(`Informe a quantidade de itens vendidos: `));
+
+    const resultado = (precoVenda - precoCusto) * qteItens;
+
+    document.write(`O valor lucrado é igual a R$${resultado}`);
+
+</script>
