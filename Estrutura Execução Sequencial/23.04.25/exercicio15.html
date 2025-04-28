@@ -1,0 +1,23 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let valorEtiqueta;
+    let escolha;
+
+    valorEtiqueta = Number(prompt(`Informe o valor do produto na etiqueta: `));
+    escolha = Number(prompt(`
+        Condições de pagamento:
+        1 - Á vista em dinheiro ou cheque, recebe 10% de desconto
+        2 - Á vista no cartão de crédito, recebe 15% de desconto
+        3 - Em duas vezes, preço normal de etiqueta sem juros
+        4 - Em duas vezes, preço normal de etiqueta mais juros de 10%
+
+        Escolha a condição de pagamento: (Digite 1-4)`));
+
+    const resultado = condPagamento(valorEtiqueta, escolha);
+
+    document.write(`Valor na etiqueta: ${valorEtiqueta} <br>`);
+    document.write(`Condição de pagamento escolhida: ${escolha} <br>`);
+    document.write(`<hr> Valor Final: R$${resultado}`);
+
+</script>

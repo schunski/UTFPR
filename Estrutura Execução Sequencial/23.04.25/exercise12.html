@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let quantidade;
+
+    quantidade = prompt(`
+        Valor das Maçãs:
+
+        R$0,30 cada, abaixo de 12 unidades.
+        R$0,25 cada, acima de 12 unidades.
+
+        Informe a quantidade de maças compradas:  `);
+
+    const resultado = analiseCompra(quantidade);
+
+    document.write(`Valor Final: R$${resultado}.`);
+
+</script>

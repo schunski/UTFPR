@@ -1,0 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    let candidatos;
+    let numCandSala;
+
+    candidatos = Number(prompt(`Informe o total de candidatos: `));
+    numCandSala = Number(prompt(`Informe o número de pessoas que podem realizar a prova na mesma sala: `));
+
+    let salasNecessarias = candidatos / numCandSala;
+
+    document.write(`O número total de candidatos é ${candidatos} e somente ${numCandSala} por sala. <br>`);
+    document.write(`<hr> Resposta: O número de salas necessárias é ${Math.ceil(salasNecessarias)}.`);
+    
+</script>

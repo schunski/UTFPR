@@ -1,0 +1,15 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let altura;
+    let sexo;
+
+    alert(`Analíse de peso ideal.`)
+    altura = Number(prompt(`Informe a altura: `));
+    sexo = prompt(`Informe o sexo (F/M): `);
+
+    const resultado = pesoIdeal(altura, sexo);
+
+    document.write(`O sexo é ${sexo} | Altura ${altura} e o peso ideal ${resultado}.`)
+
+</script>

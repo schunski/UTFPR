@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let n1;
+    let n2;
+    let operacao;
+
+    n1 = Number(prompt(`Informe o primeiro número: `));
+    n2 = Number(prompt(`Informe o segundo número: `));
+    operacao = prompt(`Informe um simbolo da operação desejada: (- + / *)`);
+
+    const resultado = calculadora(n1, n2);
+
+    document.write(`Os valores informados foram ${n1} e ${n2}. <br>`);
+    document.write(`<hr> A forma de operação escolhida foi ${operacao} e o resultado é ${resultado}.`);
+
+</script>

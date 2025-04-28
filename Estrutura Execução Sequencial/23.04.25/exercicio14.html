@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let altura;
+    let peso;
+
+    alert(`IMC – Indice de Massa Corporal`);
+    altura = Number(prompt(`Informe a altura: `));
+    peso = Number(prompt(`Informe o peso: `));
+
+    const resultado = imc(altura, peso);
+
+    document.write(`Altura: ${altura} <br>`);
+    document.write(`Peso: ${peso} <br>`);
+    document.write(`<hr> IMC: ${resultado}`);
+
+</script>

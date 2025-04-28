@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let numero;
+    let escolha;
+
+    numero = Number(prompt(`Informe um número: `));
+    escolha = Number(prompt(`
+        Operação desejada:
+        1- Par ou ímpar;
+        2- Positivo, negativo;
+
+        Informe a operação desejada: (Digite 1-2)`));
+
+    const resultado = operacao(numero, escolha);
+
+    document.write(`Número informado: ${numero} <br>`);
+    document.write(`Operação escolhida: ${escolha} <br>`);
+    document.write(`<hr> Análise: ${resultado}`);
+
+</script>
