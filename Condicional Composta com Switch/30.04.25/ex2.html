@@ -1,0 +1,28 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let n1;
+    let n2;
+    let escolha;
+
+    n1 = parseInt(prompt(`Informe o primeiro número: `));
+    n2 = parseInt(prompt(`Informe o segundo número: `));
+    escolha = parseInt(prompt(`
+    Operação:
+
+    1 - Média aritmética entre os valores digitados
+    2 - Diferença do maior pelo menor
+    3 - Produto entre os números digitados
+    4 - Divisão do primeiro pelo segundo
+
+    Informe sinal de calculo (1-4):
+    `)); 
+
+    const resultado = operacao(n1, n2, escolha);
+
+    document.write(`Análise: <br><br>`);
+    document.write(`Número 1: ${n1} <br>`);
+    document.write(`Número 2: ${n2} <br>`);
+    document.write(`<hr> O resultado é: ${resultado}`);
+
+</script>

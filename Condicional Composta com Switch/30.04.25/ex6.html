@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let nomeProduto;
+    let valorCompra;
+
+    nomeProduto = prompt(`Informe o nome do produto: `);
+    valorCompra = Number(prompt(`Informe o valor de compra: `));
+
+    const resultado = analiseVenda(valorCompra);
+
+    document.write(`Análise: <br><br>`);
+    document.write(`Nome do produto: ${nomeProduto} <br>`);
+    document.write(`Valor de Compra: R$${valorCompra} <br>`);
+    document.write(`<hr> Valor de Venda: R$${resultado}`);
+
+</script>

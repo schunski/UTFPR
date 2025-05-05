@@ -1,0 +1,20 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let n1;
+    let n2;
+    let operador;
+
+    n1 = parseInt(prompt(`Informe o primeiro o primeiro número: `));
+    n2 = parseInt(prompt(`Informe o primeiro o segundo número: `));
+    operador = prompt(`Informe  sinal de calculo (- + / *): `); 
+
+    const resultado = calculadora(n1, n2, operador);
+
+    document.write(`Análise: <br><br>`);
+    document.write(`Número 1: ${n1} <br>`);
+    document.write(`Número 2: ${n2} <br>`);
+    document.write(`Operador: ${operador} <br>`);
+    document.write(`<hr> O resultado é: ${resultado}`);
+
+</script>

@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let peso;
+    let escolha;
+
+    peso = Number(prompt(`Informe o peso: `));
+    escolha = Number(prompt(`Informe o número do planeta: `));
+
+    const resultado = planeta(peso, escolha);
+
+    document.write(`Análise: <br><br>`);
+    document.write(`Peso: ${peso} <br>`);
+    document.write(`Planeta Escolhido: ${escolha} <br>`);
+    document.write(`<hr> Peso no Planeta escolhido: ${resultado}`);
+
+</script>

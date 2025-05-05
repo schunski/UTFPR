@@ -1,0 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let saldoMedio;
+
+    saldoMedio = Number(prompt(`Informe o saldo médio: `));
+
+    const resultado = creditoEspecial(saldoMedio);
+
+    document.write(`Análise: <br><br>`);
+    document.write(`Saldo Médio: R$${saldoMedio} <br>`);
+    document.write(`<hr> Condição de Pagamento: ${resultado}`);
+
+</script>

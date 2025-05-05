@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let salario;
+
+    salario = Number(prompt(`Informe o salário: `));
+
+    const resultado = analiseSalario(salario);
+
+    document.write(`Análise: <br><br>`);
+    document.write(`Salário: R$${salario} <br>`);
+    document.write(`Reajuste: R$${resultado.toFixed(2)} <br>`);
+    const salarioReajustado = salario + resultado;
+
+    document.write(`<hr> Salário reajustado: R$${salarioReajustado}`);
+
+</script>

@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let altura;
+    let peso;
+
+    altura = Number(prompt(`Informe a altura: `));
+    peso = parseInt(prompt(`Informe o peso: `));
+
+    const imc = peso / (altura * altura);
+    const resultado = pesoIdeal(imc);
+
+    document.write(`Análise: <br><br>`);
+    document.write(`Altura: ${altura} <br>`);
+    document.write(`Peso: ${peso} <br>`);
+    document.write(`<hr> O resultado: ${resultado}`);
+
+</script>

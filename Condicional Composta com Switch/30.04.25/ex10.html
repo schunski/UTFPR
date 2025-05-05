@@ -1,0 +1,26 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="functions.js"></script>
+<script>
+    let modelo;
+    let categoria;
+    let valorVeiculo;
+
+    modelo = prompt(`Informe o modelo do veículo: `);
+    categoria = Number(prompt(`
+    Categoria:
+
+    1 - Passeio
+    2 - Utilitário
+
+    Informe a categoria do veículo: `));
+    valorVeiculo = Number(prompt(`Informe o valor do veículo: `));
+
+    const resultado = analiseIpva(categoria, valorVeiculo);
+
+    document.write(`Análise: <br><br>`);
+    document.write(`Categoria: ${categoria} <br>`);
+    document.write(`Modelo: ${modelo} <br>`);
+    document.write(`Valor do Veículo: R$${valorVeiculo} <br>`);
+    document.write(`<hr> Valor do IPVA: R$${resultado.toFixed(2)}`);
+
+</script>
